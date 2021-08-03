@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DrawApp/DrawApp.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:JotUI/JotUI.xcodeproj">
    </FileRef>
    <FileRef

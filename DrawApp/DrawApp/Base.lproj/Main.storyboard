@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19142.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19129"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpu-VF-gbf">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="50"/>
+                                <items>
+                                    <navigationItem title="Title" id="kvh-T0-aXv">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="nb0-xh-LJh">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="0zt-gk-eT4">
+                                                <rect key="frame" x="20" y="8" width="303" height="34.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCZ-A4-xfc">
+                                <rect key="frame" x="0.0" y="50" width="1366" height="974"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xpu-VF-gbf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2CZ-Gn-XyH"/>
+                            <constraint firstItem="YCZ-A4-xfc" firstAttribute="top" secondItem="xpu-VF-gbf" secondAttribute="bottom" id="Wkh-xk-bD4"/>
+                            <constraint firstItem="xpu-VF-gbf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZHi-Qp-5gP"/>
+                            <constraint firstAttribute="bottom" secondItem="YCZ-A4-xfc" secondAttribute="bottom" id="chB-G8-5f1"/>
+                            <constraint firstItem="YCZ-A4-xfc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="n6G-fA-Flj"/>
+                            <constraint firstItem="YCZ-A4-xfc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qhc-6O-7AY"/>
+                            <constraint firstItem="xpu-VF-gbf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="toE-qq-yZp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="canvasView" destination="YCZ-A4-xfc" id="OLu-9g-yQg"/>
+                        <outlet property="undoButton" destination="0zt-gk-eT4" id="Pki-Cl-Hpr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.79941434846265" y="115.42968749999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
